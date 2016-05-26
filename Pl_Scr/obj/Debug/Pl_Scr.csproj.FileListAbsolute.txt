@@ -1,0 +1,16 @@
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\bin\Debug\Pl_Scr.exe.config
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\bin\Debug\Pl_Scr.exe
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\bin\Debug\Pl_Scr.pdb
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.csprojResolveAssemblyReference.cache
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\MainWindow.g.cs
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\App.g.cs
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr_MarkupCompile.cache
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr_MarkupCompile.lref
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\MainWindow.baml
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.g.resources
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.Properties.Resources.resources
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.csproj.GenerateResource.Cache
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.exe
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.pdb
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\george.vlatas\Documents\Pl_Scr\Pl_Scr\Pl_Scr\obj\Debug\Pl_Scr.Messages.resources
