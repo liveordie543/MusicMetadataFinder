@@ -14,11 +14,11 @@ namespace Pl_Scr
 
         public static string GetReleaseDateBySong(string title, string artist)
         {
-            string trackInfoPath = String.Format("?method=track.getInfo&api_key={0}&artist={1}&track={2}", ApiKey, HttpUtility.UrlEncode(artist), HttpUtility.UrlEncode(title));
+            string trackInfoPath = $"?method=track.getInfo&api_key={ApiKey}&artist={HttpUtility.UrlEncode(artist)}&track={HttpUtility.UrlEncode(title)}";
             HttpResponseMessage trackResponse = PerformWebRequest(trackInfoPath, "GET");
             XmlDocument trackXml = new XmlDocument();
             trackXml.LoadXml(trackResponse.Content.ReadAsStringAsync().Result);
-
+            
             string releaseDate = GetReleaseDateFromXml(trackXml);
             return releaseDate == Messages.ReleaseDateNotFound ? GetReleaseDateBySongAlbum(trackXml) : releaseDate;
         }
@@ -33,7 +33,7 @@ namespace Pl_Scr
                     XmlNode childNode = albumNode.ChildNodes.Item(i);
                     if (childNode != null && childNode.Name == "mbid")
                     {
-                        string albumInfoPath = String.Format("?method=album.getinfo&api_key={0}&mbid={1}", ApiKey, childNode.InnerText);
+                        string albumInfoPath = $"?method=album.getinfo&api_key={ApiKey}&mbid={childNode.InnerText}";
                         HttpResponseMessage albumResponse = PerformWebRequest(albumInfoPath, "GET");
                         XmlDocument albumXml = new XmlDocument();
                         albumXml.LoadXml(albumResponse.Content.ReadAsStringAsync().Result);
@@ -47,7 +47,7 @@ namespace Pl_Scr
         private static string GetReleaseDateFromXml(XmlDocument xml)
         {
             XmlNode releaseDateNode = xml.GetElementsByTagName("releasedate").Item(0);
-            string releaseDate = releaseDateNode != null ? releaseDateNode.InnerText : Messages.ReleaseDateNotFound;
+            string releaseDate = releaseDateNode?.InnerText ?? Messages.ReleaseDateNotFound;
             if (releaseDate == Messages.ReleaseDateNotFound)
             {
                 XmlNode tagsNode = xml.GetElementsByTagName("toptags").Item(0) ?? xml.GetElementsByTagName("tags").Item(0);
